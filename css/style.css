@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* font */
+@font-face {
+  font-family: 'Arita-dotum-Medium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-dotum-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  font-size: 10px; 
+  font-family: 'Arita-dotum-Medium';
+  line-height: 1.2;
+  color: #fff;
+}
+
+body{
+  font-size: 1.2rem;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+ul,
+dl,
+ol {
+  list-style: none;
+}
+
+img,
+input,
+button {
+  vertical-align: top;
+}
+
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#wrap {
+  background-color: #000;
+  max-width: 550px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+header {
+  padding: 10px 30px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header .circle {
+  width: 50px;
+  height: 50px;
+  background-color: salmon;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+header h4 {
+  display: inline-block;
+  font-size: 2rem;
+}
+
+.btn{
+  padding: 20px;
+  position: relative;
+}
+
+.wrap01{
+  position: absolute;
+  top: 20px;
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap01 > div{
+  width: 30px;
+  height: 30px;
+  position:relative;
+}
+i{
+  font-size: 2.4rem;
+}
+.wrap01 > div i{
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+ i.off{
+  display: none;
+}
+
+ i.on{
+  display: block;
+}
+
+.wrap02{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+}
+
+.wrap02>i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.comment{
+  padding: 30px;
+}
+
+.comment h4{
+  font-size: 2rem;
+}
+
+.comment p{
+  padding: 10px 0;
+  font-size: 1.6rem;
+}
+
+.comment{
+  font-size: 1.6rem;
+  color: #ddd;
+}
+/* swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
